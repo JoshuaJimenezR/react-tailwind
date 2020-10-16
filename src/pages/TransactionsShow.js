@@ -59,7 +59,7 @@ class TransactionsShow extends Component {
 
         return (
             <Container>
-                <div className="grid grid-flow-row gap-0">
+                <div className="grid gap-0">
                     <div>
                         <PageHeader>
                             <div className="inline-flex items-center px-4 py-2 text-sm leading-5 font-medium rounded-md text-blue-400 bg-white hover:text-blue-700">
@@ -71,7 +71,7 @@ class TransactionsShow extends Component {
                         <CtaAction title="Estudio de empresas" actions={actions}/>
                     </div>
                     <div>
-                        <div className="grid grid-cols-3 mt-12">
+                        <div className="grid lg:grid-cols-3 mt-12">
                             <div className="col-span-2">
                                 <div className="title">
                                     <h2 className="font-extrabold tracking-tight text-gray-700 sm:text-lg ">
@@ -79,7 +79,7 @@ class TransactionsShow extends Component {
                                     </h2>
                                 </div>
                                 <form className="mt-0" action="#" method="POST">
-                                    <div className="grid grid-cols-3 gap-4 my-3">
+                                    <div className="grid lg:grid-cols-3 gap-4 my-3">
                                         <div className="">
                                             <label htmlFor="">Monto Colones</label>
                                             <input aria-label="" type="text" required
@@ -128,7 +128,6 @@ class TransactionsShow extends Component {
                                 <div>Recibido conforme</div>
                                 <div>Factura</div>
                             </div>
-
                         </div>
                     </div>
                     <div className="grid grid-cols-3">
@@ -160,13 +159,12 @@ class TransactionsShow extends Component {
                             <div className="ml-3">
                                 <button
                                     type="button"
-                                    className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:text-gray-800 active:bg-gray-50"
+                                    className="lg:flex lg:inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:text-gray-800 active:bg-gray-50"
                                 >
                                     Cerrar
                                 </button>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
