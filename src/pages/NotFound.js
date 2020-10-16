@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import DenyIcon from "../Icons/DenyIcon";
+import DenyIcon from "../components/Icons/DenyIcon";
 import Container from "../components/Container";
 
 class NotFound extends Component {
@@ -23,7 +23,6 @@ class NotFound extends Component {
                         onClick={this.handleClick}
                     >Ir a inicio.
                     </button>
-                    .
                 </p>
             </Container>
         );

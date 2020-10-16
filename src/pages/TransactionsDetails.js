@@ -46,8 +46,7 @@ class TransactionsDetails extends Component {
                     title={`Transaccion ${record.transaction_friendly_id}`}
                     description="Detalle de la transacción."
                 />
-
-                <div className="grid grid-cols-2 mb-5">
+                <div className="grid lg:grid-cols-2 mb-5">
                     <div>
                         <p>Monto Transacción:</p>
                         <input className="form-input" type="text" value={record.amount} disabled/>
@@ -57,8 +56,7 @@ class TransactionsDetails extends Component {
                         <input className="form-input" type="text" value={record.real_amount} disabled/>
                     </div>
                 </div>
-
-                <div className="grid grid-cols-2 mb-5">
+                <div className="grid lg:grid-cols-2 gap-2 mb-5">
                     <div>
                         <p>Comprador:</p>
                         <input type="text" value={record.buyer} disabled/>
@@ -68,7 +66,6 @@ class TransactionsDetails extends Component {
                         <input type="text" value={record.seller} disabled/>
                     </div>
                 </div>
-
                 <Table header={headerTable} records={records} type="transaction-detail"/>
             </Container>
         );

@@ -1,5 +1,5 @@
 import React from 'react';
-import MoneyIcon from "../Icons/MoneyIcon";
+import MoneyIcon from "./Icons/MoneyIcon";
 
 const Stats = ({records}) => {
 

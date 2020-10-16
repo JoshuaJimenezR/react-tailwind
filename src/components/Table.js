@@ -1,6 +1,6 @@
 import React from 'react';
-import PreviousArrowIcon from "../Icons/PreviousArrowIcon";
-import NextArrowIcon from "../Icons/NextArrowIcon";
+import PreviousArrowIcon from "./Icons/PreviousArrowIcon";
+import NextArrowIcon from "./Icons/NextArrowIcon";
 import { Link } from 'react-router-dom';
 
 const Table = ({header, records, type}) => {

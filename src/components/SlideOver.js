@@ -1,5 +1,5 @@
 import React from 'react';
-import CloseIcon from "../Icons/CloseIcon";
+import CloseIcon from "./Icons/CloseIcon";
 
 const SlideOver = ({visible, title, close}) => {
 

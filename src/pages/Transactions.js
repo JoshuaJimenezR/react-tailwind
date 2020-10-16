@@ -45,23 +45,21 @@ class Transactions extends Component {
     render() {
         return (
             <Container>
-                <div className="grid grid-cols-1">
-                    <div className="grid-rows-2">
-                        <PageHeader
-                            title="Transacciones"
-                            description="A continuación se muestran las ultimas transacciones tramitadas con nosotros."
+                <div className="grid-rows-2">
+                    <PageHeader
+                        title="Transacciones"
+                        description="A continuación se muestran las ultimas transacciones tramitadas con nosotros."
+                    >
+                        <button
+                            type="button"
+                            onClick={this.updateSlideOver}
+                            className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:text-gray-800 active:bg-gray-50"
                         >
-                            <button
-                                type="button"
-                                onClick={this.updateSlideOver}
-                                className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:text-gray-800 active:bg-gray-50"
-                            >
-                                Gestionar
-                            </button>
-                        </PageHeader>
+                            Gestionar
+                        </button>
+                    </PageHeader>
 
-                        <Table header={headerTable} records={records} type="transaction"/>
-                    </div>
+                    <Table header={headerTable} records={records} type="transaction"/>
                 </div>
 
                 <SlideOver visible={this.state.createTransaction} close={this.closeSlideOver} title="Gestionar Transacción"/>

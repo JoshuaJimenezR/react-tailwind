@@ -107,7 +107,6 @@ class Dashboard extends Component {
                     <Stats records={statsObject}/>
                 </div>
 
-
                 { advancedDetails &&
                     <div className="grid grid-rows-2 grid-flow-row gap-4 my-2">
                         <div className="row-span-1">

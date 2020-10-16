@@ -22,19 +22,17 @@ const records = [
 const Commissions = () => {
     return (
         <Container>
-            <div className="grid grid-cols-1">
-                <div className="grid-rows-2">
-                    <PageHeader
-                        title="Comisiones"
-                        description="A continuación se muestran las comisiones asociadas a su cuenta."
-                    />
+            <div className="grid-rows-2">
+                <PageHeader
+                    title="Comisiones"
+                    description="A continuación se muestran las comisiones asociadas a su cuenta."
+                />
+            </div>
+            <div className="grid-rows-2 grid-flow-row gap-2 my-2">
+                <div>
+                    Filtros
                 </div>
-                <div className="grid-rows-2 grid-flow-row gap-2 my-2">
-                    <div>
-                        Filtros
-                    </div>
-                    <Table header={headerTable} records={records} type="commissions"/>
-                </div>
+                <Table header={headerTable} records={records} type="commissions"/>
             </div>
         </Container>
     );
