@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import DenyIcon from "../components/Icons/DenyIcon";
-import Container from "../components/Container";
+import Container from "../components/ui/Content/Container";
 
 class NotFound extends Component {
 

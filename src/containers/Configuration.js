@@ -1,6 +1,6 @@
 import React from 'react';
-import PageHeader from "../components/PageHeader";
-import Container from "../components/Container";
+import PageHeader from "../components/ui/Content/PageHeader";
+import Container from "../components/ui/Content/Container";
 
 const Configuration = () => {
     return (

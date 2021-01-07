@@ -1,17 +1,14 @@
 import { connect } from 'react-redux';
-import Header from '../components/Header';
+import Header from '../components/ui/Navigation/Header';
 import {
-    toggleAccounts,
     toogleMenuMobile
 } from '../actions/menu';
 
 const stateToProps = state => ({
     enableAccountsMenu: state.menu.toggleAccounts,
-    companyAccounts: state.accounts,
 });
 
 const dispatchToProps = dispatch => ({
-    toggleAccountMenu: () => dispatch(toggleAccounts()),
     toggleMobileMenu: () => dispatch(toogleMenuMobile())
 });
 

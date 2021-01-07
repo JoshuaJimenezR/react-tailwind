@@ -3,21 +3,16 @@ import PropTypes from "prop-types";
 
 import {Redirect, Route, Switch} from "react-router-dom";
 
+import Wrapper from './ui/Content/wrapper';
 import Header from "../containers/Header";
 
-import SideBar from "./SideBar";
-import MobileMenu from "./MobileMenu";
-import TransactionDetails from "../pages/TransactionsDetails";
-import TransactionsShow from "../pages/TransactionsShow";
-import Transactions from "../pages/Transactions";
-import Commissions from "../pages/Commissions";
-import ZotaCash from "../pages/ZotaCash";
-import VendorDirectory from "../pages/VendorDirectory";
-import Configuration from "../pages/Configuration";
-import NotFound from "../pages/NotFound";
-import LoginForm from "../pages/LoginForm";
-import Dashboard from "../pages/Dashboard";
-import {toogleMenuMobile} from "../actions/menu";
+import SideBar from "./ui/Navigation/SideBar";
+import MobileMenu from "./ui/Navigation/MobileMenu";
+
+import NotFound from "../containers/NotFound";
+import LoginForm from "../containers/LoginForm";
+import Dashboard from "../containers/Dashboard";
+import Configuration from "../containers/Configuration";
 
 class Layout extends Component {
 
@@ -29,7 +24,7 @@ class Layout extends Component {
         const { menuItems, enableMobileMenu } = this.props;
 
         return (
-            <div className="flex h-screen bg-gray-50 dark:bg-gray-900">
+            <Wrapper>
                 <SideBar menuItems={menuItems} toggleMobileMenu={this.handleToggleMobileMenu}/>
                 <MobileMenu enableMobileMenu={enableMobileMenu} toggleMobileMenu={this.handleToggleMobileMenu} menuItems={menuItems}/>
 
@@ -37,12 +32,6 @@ class Layout extends Component {
                     <Header/>
                     <main className="h-full overflow-y-auto mt-5">
                         <Switch>
-                            <Route path="/transacciones/details/:id" component={TransactionDetails} />
-                            <Route path="/transacciones/show/:id" component={TransactionsShow} />
-                            <Route path="/transacciones" component={Transactions} />
-                            <Route path="/comisiones" component={Commissions} />
-                            <Route path="/zotacash" component={ZotaCash} />
-                            <Route path="/directorio-empresas" component={VendorDirectory} />
                             <Route path="/configuracion" component={Configuration} />
                             <Route path="/not-found" component={NotFound} />
                             <Route path="/login" component={LoginForm} />
@@ -51,7 +40,7 @@ class Layout extends Component {
                         </Switch>
                     </main>
                 </div>
-            </div>
+            </Wrapper>
         );
     }
 }

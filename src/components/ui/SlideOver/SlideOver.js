@@ -1,5 +1,5 @@
 import React from 'react';
-import CloseIcon from "./Icons/CloseIcon";
+import CloseIcon from "../../Icons/CloseIcon";
 
 const SlideOver = ({visible, title, close}) => {
 
@@ -16,9 +16,7 @@ const SlideOver = ({visible, title, close}) => {
                         <div onClick={close} className={(visible ? "absolute inset-0 bg-gray-500 bg-opacity-75 transition transition-opacity ease-in-out duration-700 opacity-100" : "")}></div>
 
                         <section className="absolute inset-y-0 right-0 pl-10 max-w-full flex">
-
                             <div className={panel}>
-
                                 <div className={closeButton}>
                                     <button
                                         aria-label="Close panel"

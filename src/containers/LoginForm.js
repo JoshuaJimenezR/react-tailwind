@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Container from "../components/Container";
-import Input from "../components/Input";
+import Container from "../components/ui/Content/Container";
+import Input from "../components/ui/Form/Input";
 import Joi from 'joi-browser';
 
 class LoginForm extends Component {
